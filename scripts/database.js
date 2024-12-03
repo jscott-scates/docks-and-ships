@@ -17,73 +17,73 @@ const database = {
         {
             id: 1,
             name: "Pioneering Spirit",
-            dockId: ,
+            dockId: 1
         },{
             id: 2,
             name: "Boaty McBoatface",
-            dockId: ,
+            dockId: 2
         },{
             id: 3,
             name: "Seawise Giant",
-            dockId: ,
+            dockId: 3
         },{
             id: 4,
             name: "Reality Bites",
-            dockId: ,
+            dockId: 4
         },{
             id: 5,
             name: "To Sea or Knot to Sea",
-            dockId: ,
+            dockId: 1
         },{
             id: 6,
             name: "The Codfather",
-            dockId: ,
+            dockId: 2
         },{
             id: 7,
             name: "Vitamin Sea",
-            dockId: ,
+            dockId: 3
         }],
     shippingShips: [
         {
             id: 1,
             name: "Esso Atlantic",
-            haulerId: 
+            haulerId: 1
         },{
             id: 2,
             name: "Prairial",
-            haulerId: 
+            haulerId: 2
         },{
             id: 3,
             name: "Palais Royal",
-            haulerId: 
+            haulerId: 3
         },{
             id: 4,
             name: "Rivoli",
-            haulerId: 
+            haulerId: 4
         },{
             id: 5,
             name: "Champs Elysee",
-            haulerId: 
+            haulerId: 5
         },{
             id: 6,
             name: "Ever Ace",
-            haulerId: 
+            haulerId: 6
         },{
             id: 7,
             name: "Nissei Maru",
-            haulerId: 
+            haulerId: 7
         },{
             id: 8,
             name: "MSC Gulsun",
-            haulerId: 
-        }{
+            haulerId: 1
+        },{
             id: 9,
             name: "HMM Rotterdam",
-            haulerId: 
+            haulerId: 2
         },{
             id: 10,
             name: "CMA CGM Trocadero",
-            haulerId: 
+            haulerId: 3
         }
     ]
 }
@@ -91,11 +91,11 @@ const database = {
 
 
 export const getDocks = () => {
-    return database.docks.map(dock => ({...docks}))
+    return database.docks.map(dock => ({...dock}))
 }
 export const getHaulingShips = () => {
-    return database.haulers.map(hauler => ({...haulers}))
+    return database.haulers.map(hauler => ({...hauler}))
 }
 export const getShippingShips = () => {
-    return database.shippingShips.map(shippingShip => ({...shippingShips}))
+    return database.shippingShips.map(shippingShip => ({...shippingShip}))
 }

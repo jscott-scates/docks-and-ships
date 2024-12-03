@@ -6,7 +6,7 @@ import { shippingShipsList } from "./shippingShips.js"
 const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
-<h1>DeShawns Dog Walking</h1>
+<h1>Sail the Seven Seas Shipping Network</h1>
 <article class="details">
     <section class="detail--column list details__cities">
         <h2>Docks</h2>
@@ -20,12 +20,6 @@ const applicationHTML = `
         <h2>Shipping Ships</h2>
         ${shippingShipsList()}
     </section>
-</article>
-
-<article class="assignments">
-    <h2>Current Assignments</h2>
-    ${Assignments()}
-</article>
-`
+</article>`
 
 mainContainer.innerHTML = applicationHTML

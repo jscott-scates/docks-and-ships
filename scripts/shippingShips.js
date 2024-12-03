@@ -17,5 +17,5 @@ export const shippingShipsList = () => {
 
     shippingShipsHTML += "</ul>"
 
-    return shippingShipsHTMLHTML
+    return shippingShipsHTML
 }
