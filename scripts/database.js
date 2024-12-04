@@ -17,7 +17,7 @@ const database = {
         {
             id: 1,
             name: "Pioneering Spirit",
-            dockId: 1
+            dockId: 2
         },{
             id: 2,
             name: "Boaty McBoatface",
@@ -33,7 +33,7 @@ const database = {
         },{
             id: 5,
             name: "To Sea or Knot to Sea",
-            dockId: 1
+            dockId: 4
         },{
             id: 6,
             name: "The Codfather",
