@@ -25,10 +25,11 @@ document.addEventListener(
 
 export const dockList = () => {
     const docks = getDocks()
+    const sortedDocksArray = [...docks].sort((a,b)=>(a.location.localeCompare(b.location)))
 
     let docksHTML = "<ul>"
 
-    for (const dock of docks) {
+    for (const dock of sortedDocksArray) {
         // Convert each dock object to an <li> and append to the docksHTML string
         docksHTML += `
             <li data-id="${dock.id}"

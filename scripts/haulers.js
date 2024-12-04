@@ -19,10 +19,11 @@ document.addEventListener(
 
 export const haulingShipList = () => {
     const haulers = getHaulingShips()
+    const sortedHaulersArray = [...haulers].sort((a,b)=>(a.name.localeCompare(b.name)))
 
     let haulersHTML = "<ul>"
 
-    for (const hauler of haulers) {
+    for (const hauler of sortedHaulersArray) {
         // Convert each dock object to an <li> and append to the docksHTML string
         haulersHTML += `
             <li data-dockidforeignkey = "${hauler.dockId}"

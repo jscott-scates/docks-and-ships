@@ -17,31 +17,16 @@ document.addEventListener(
             }
             window.alert(`${shippingShipClicked.dataset.name} is being hauled by ${haulingShip}`)
         }
-
-        // Was a shipping ship list item clicked?
-
-            // Get the haulerId value of the shipping ship clicked
-
-            // Define a default object for the found hauler
-            
-
-            // Iterate the array of hauler objects
-
-                // Does the haulerId foreign key match the id of the current hauler?
-
-                    // Reassign the value of `haulingShip` to the current hauler
-
-            // Show an alert to the user with this format...
-            // Palais Royal is being hauled by Seawise Giant
     }
 )
 
 export const shippingShipsList = () => {
     const shippingShips = getShippingShips ()
+    const sortedShippingShipsArray = [...shippingShips].sort((a,b)=>(a.name.localeCompare(b.name)))
 
     let shippingShipsHTML = "<ul>"
 
-    for (const ship of shippingShips) {
+    for (const ship of sortedShippingShipsArray) {
         // Convert each dock object to an <li> and append to the docksHTML string
         shippingShipsHTML += `
             <li data-id="${ship.id}"

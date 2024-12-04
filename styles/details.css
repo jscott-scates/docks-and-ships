@@ -1,5 +1,6 @@
 .details {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
   
 }
 h2 {
@@ -16,5 +17,4 @@ li {
     margin: 0 2rem;
     border: 1px dotted white;
 }
-
 
