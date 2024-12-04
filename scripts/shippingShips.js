@@ -4,7 +4,7 @@ document.addEventListener(
     "click",
     (shippingShipClickEvent) => {
         const shippingShipClicked = shippingShipClickEvent.target
-        const shippingShipHauler = shippingShipClicked.dataset.hauleridforeignkey
+        const shippingShipHauler = shippingShipClicked.dataset.hauleridforeignkey //must be lowercase
         
         if(shippingShipClicked.dataset.type === "ship"){
             const haulingShips = getHaulingShips()

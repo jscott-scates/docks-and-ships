@@ -8,15 +8,20 @@ document.addEventListener(
 
         if(dockClicked.dataset.type === "dock"){
             const haulingShips = getHaulingShips()
-            let haulingShipsArray = ["nothing"]    
+            let haulingShipsArray = []    
         
             for (const hauler of haulingShips) {
                 if(parseInt(dockClickedId) === hauler.dockId){
-                    haulingShipsArray.pop()
                     haulingShipsArray.push(hauler.name)
                 }
             }
-            window.alert(`The ${dockClicked.dataset.location} dock is currently unloading ${haulingShipsArray}`)
+            
+            if (haulingShipsArray.length>0){
+                let joinedArray = haulingShipsArray.join(", ")
+                window.alert(`The ${dockClicked.dataset.location} dock is currently unloading ${joinedArray}`)
+            }else {
+                window.alert(`The ${dockClicked.dataset.location} dock is currently unloading nothing.`)
+            }            
         }
     }
 )
